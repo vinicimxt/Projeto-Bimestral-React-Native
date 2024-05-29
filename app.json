@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "projeto-bimestral-react-native",
-    "slug": "projeto-bimestral-react-native",
+    "name": "AwesomeProject",
+    "slug": "AwesomeProject",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
