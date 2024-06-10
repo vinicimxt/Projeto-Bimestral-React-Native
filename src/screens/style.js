@@ -15,16 +15,23 @@ const styles = StyleSheet.create({
     resizeMode: 'cover',
   },
 
-  searchInput: {
+  searchContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
     width: '55%',
     height: 40,
-    borderColor: 'gray',
+    borderColor: 'purple',
     borderWidth: 1,
     marginBottom: 12,
     paddingHorizontal: 8,
     backgroundColor: '#fff', // Adicione uma cor de fundo para a barra de pesquisa
-    borderRadius: 20, 
+    borderRadius: 20, // Valor para arredondar as bordas
   },
+  
+  searchIcon: {
+    marginRight: 10,
+  },
+  
   
 
   header: {
