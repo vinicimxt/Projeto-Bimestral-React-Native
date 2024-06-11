@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { TextInput } from 'react-native-web';
 
 const styles = StyleSheet.create({
   //---------------------------- STYLE DA HOME -----------------------
@@ -25,9 +26,14 @@ const styles = StyleSheet.create({
     marginBottom: 12,
     paddingHorizontal: 8,
     backgroundColor: '#fff', // Adicione uma cor de fundo para a barra de pesquisa
-    borderRadius: 20, // Valor para arredondar as bordas
+    borderRadius: 20, 
+    
   },
   
+  searchInput :{
+      width : 810,
+  },
+
   searchIcon: {
     marginRight: 10,
   },
@@ -78,21 +84,32 @@ const styles = StyleSheet.create({
     marginVertical: 10,
     fontFamily: 'Arial',
   },
+
+  buttonHome:{
+    displayflex : flexDirection = 'row',
+    
+  },
   
   //--------------------------------- STYLE DETALHES ---------------------------
   
   containerDetails: {
     flex: 1,
-    backgroundColor: '#993399',
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  textDetails:{
+    color : '#9932cc',
+  },
+  h1Details :{
+    color : '#9932cc',
   },
 
   //------------------------------------- STYLE DE LOGIN ---------------
 
   containerLogin: {
     flex: 1,
-    backgroundColor: '#fafad2',
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
     alignItems: 'center',
     justifyContent: 'center',
     padding: 16,
@@ -105,6 +122,8 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     marginBottom: 12,
     paddingHorizontal: 8,
+    color : 'white',
+    
   },
   
   inputSenha: {
@@ -114,16 +133,25 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     marginBottom: 12,
     paddingHorizontal: 8,
+    color : 'white',
+  },
+
+  titleLogin: {
+   
   },
 
   // -------------------------- STYLE SOBRE NOS -----------------
   
   containerSobreNos: {
     flex: 1,
-    backgroundColor: '#cf9bcc',
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
     alignItems: 'center',
     justifyContent: 'center',
   },
+  textSobre:{
+    color : '#9932cc',
+  }
+  
 });
 
 export default styles;

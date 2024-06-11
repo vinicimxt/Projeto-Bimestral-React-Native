@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, View,  Text, TextInput, Alert } from 'react-native';
+import { Button, View,  Text, TextInput, Alert,ImageBackground} from 'react-native';
 import styles from './style';
 
 const LoginScreen = ({ navigation }) => {
@@ -15,6 +15,10 @@ const LoginScreen = ({ navigation }) => {
     };
 
     return (
+        <ImageBackground
+              source={{ uri: './fotos/FundoHome.png' }} 
+              style={styles.background}
+    >
         <View style={styles.containerLogin}>
             <Text>Você está em Login</Text>
             <Text>Email</Text>
@@ -34,15 +38,20 @@ const LoginScreen = ({ navigation }) => {
                 placeholder="Senha"
                 secureTextEntry
             />
-            <Button
+            <Button style={styles.titleLogin}
                 title="Acessar"
                 onPress={handleLogin}
-            />
-            <Button
+            /> <br></br>
+            <Button style={styles.titleLogin}
                 title="Recuperar senha"
                 onPress={() => navigation.navigate('Recuperar senha')}
+            /><br></br>
+            <Button
+                title="Cadastrar"
+                onPress={()=> navigation.navigate(Cadastrar)}
             />
         </View>
+        </ImageBackground>
     );
 };
 
