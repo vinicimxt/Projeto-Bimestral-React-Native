@@ -38,6 +38,8 @@ const LoginScreen = ({ navigation }) => {
                 placeholder="Senha"
                 secureTextEntry
             />
+            <View style={styles.button}>
+
             <Button style={styles.titleLogin}
                 title="Acessar"
                 onPress={handleLogin}
@@ -50,6 +52,7 @@ const LoginScreen = ({ navigation }) => {
                 title="Cadastrar"
                 onPress={()=> navigation.navigate(Cadastrar)}
             />
+            </View>
         </View>
         </ImageBackground>
     );

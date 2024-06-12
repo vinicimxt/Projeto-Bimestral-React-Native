@@ -31,7 +31,9 @@ const styles = StyleSheet.create({
   },
   
   searchInput :{
-      width : 810,
+      width : '93%',
+      height : '90%',
+      
   },
 
   searchIcon: {
@@ -41,7 +43,7 @@ const styles = StyleSheet.create({
   
 
   header: {
-    fontSize: 125,
+    fontSize: 90,
     color: 'purple',
     fontFamily: 'Arial', // Fonte nativa do sistema
   },
@@ -53,7 +55,7 @@ const styles = StyleSheet.create({
   },
 
   description: {
-    fontSize: 16,
+    fontSize: 13,
     color: '#fff',
     textAlign: 'center',
     marginVertical: 10,
@@ -67,14 +69,14 @@ const styles = StyleSheet.create({
   },
 
   smallImage: {
-    width: 150,
-    height: 150,
+    width: '50%',
+    height: '60%',
     marginHorizontal: 5, // Espaço de 1 cm = 10 dp, aqui usando 5 dp para balancear o layout
   },
 
   largeImage: {
-    width: 200,
-    height: 200,
+    width: 140,
+    height: 160,
     marginHorizontal: 5,
   },
 
@@ -85,9 +87,9 @@ const styles = StyleSheet.create({
     fontFamily: 'Arial',
   },
 
-  buttonHome:{
-    displayflex : flexDirection = 'row',
-    
+  button:{
+    flexDirection : 'row',
+    paddingTop : 20,
   },
   
   //--------------------------------- STYLE DETALHES ---------------------------
@@ -104,6 +106,8 @@ const styles = StyleSheet.create({
   h1Details :{
     color : '#9932cc',
   },
+
+  
 
   //------------------------------------- STYLE DE LOGIN ---------------
 
