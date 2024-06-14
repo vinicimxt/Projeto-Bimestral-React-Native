@@ -50,13 +50,13 @@ const styles = StyleSheet.create({
   
   welcome: {
     fontSize: 20,
-    color: '#fff',
+    color : '#9932cc',
     marginVertical: 10,
   },
 
   description: {
     fontSize: 13,
-    color: '#fff',
+    color : '#9932cc',
     textAlign: 'center',
     marginVertical: 10,
   },
@@ -102,6 +102,9 @@ const styles = StyleSheet.create({
   },
   textDetails:{
     color : '#9932cc',
+    textAlign: 'auto',
+    paddingLeft: 80,
+    paddingRight: 80,
   },
   h1Details :{
     color : '#9932cc',
@@ -154,6 +157,13 @@ const styles = StyleSheet.create({
   },
   textSobre:{
     color : '#9932cc',
+    
+  },
+  imageFotos: {
+    borderRadius : 80,
+    width : 80,
+    height : 80,
+    
   }
   
 });

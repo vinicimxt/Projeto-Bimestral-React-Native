@@ -1,5 +1,5 @@
 import react from 'react';
-import { Button , View , Text,ImageBackground} from 'react-native';
+import { Button , View , Text,ImageBackground,} from 'react-native';
 import styles from './style';
 
 const DetailsScreen = ({navigation}) =>{
@@ -9,11 +9,11 @@ const DetailsScreen = ({navigation}) =>{
       style={styles.background}
     >
         <View style={styles.containerDetails}>
-            <h1 style={styles.h1Details}>Bem vindos ao MOOVIE FeedBack,Deixe sua opinião para o proximo ༼ つ ◕_◕ ༽つ </h1>
+            <h1 style={styles.h1Details}>Seja bem vindo ao FBMOVIES, Deixe sua opinião para o próximo ༼ つ ◕_◕ ༽つ </h1>
 
-            <Text style={styles.textDetails}>MOOVIE FEEDBACK: Uma plataforma para comentários sobre cinema <br></br>
+            <h2 style={styles.textDetails}> Uma plataforma para comentários sobre todos os tipos de filmes </h2><br></br>
 
-Bem-vindo ao MOOVIE FEEDBACK, o site ideal para amantes de cinema compartilhar suas opiniões e descobrir novas perspectivas sobre os filmes que gostam. Você encontrará um local acolhedor e interativo onde cinéfilos de todo o mundo podem se reunir para compartilhar opiniões e opiniões sobre uma variedade de gêneros e épocas do cinema.<br></br>
+<Text style={styles.textDetails}> O FBMOVIES é o site ideal para amantes de cinema compartilharem suas opiniões e descobrir novas perspectivas sobre os filmes que gostam. Você encontrará um local acolhedor e interativo onde cinéfilos de todo o mundo podem se reunir para compartilhar opiniões sobre variados de gêneros.<br></br>
 
 <br></br>
 

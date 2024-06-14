@@ -22,9 +22,9 @@ const HomeScreen = ({ navigation }) => {
             value={searchText}
           />
         </View>
-        <Text style={styles.welcome}>SEJA BEM VINDO</Text>
+        <Text style={styles.welcome}>SEJA BEM VINDO!</Text>
         <Text style={styles.description}>
-          Olá, nosso site será baseado em feedback de filmes, séries, animes, entre outros.
+          O objetivo do site é te ajudar a encontrar o filme ideal e ajudar outros cinéfilos com opniões criteriosas ;)
         </Text>
         <View style={styles.imageRow}>
           <Image
