@@ -8,6 +8,7 @@ import HomeScreen from './src/screens/HomeScreen';
 import DetailsScreen from './src/screens/DetailsScreen';
 import LoginScreen from './src/screens/LoginScreen';  
 import SobreNosScreen from './src/screens/SobreNosScreen';
+import RegisterScreen from './src/screens/RegisterScreen';
 const Stack = createNativeStackNavigator();
 
 export default function App() {
@@ -33,6 +34,12 @@ export default function App() {
             name='Sobre nos'
             component={SobreNosScreen} 
           />
+
+        <Stack.Screen
+            name='Cadastrar'
+            component={RegisterScreen} 
+          />
+
         </Stack.Navigator>
       </NavigationContainer>
   );

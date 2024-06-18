@@ -23,16 +23,21 @@ Ao fornecer avaliações rápidas e críticas abrangentes sobre os filmes que vo
 Construa seu perfil privado, onde você pode acompanhar todas as suas avaliações, ver suas listas de filmes favoritos e se conectar com outras pessoas.</Text>
 
         <View style={styles.button}>
+        <View style={styles.button1}>
             <Button 
                 title='Home'
                 onPress={ () =>navigation.navigate('Home')}
             />
-            <br></br>
+        </View>
+        <View style={styles.button2}>    
             <Button
                 title='Deixe sua opinião'
                 onPress={ () =>navigation.navigate('Deixe sua opinião')}
             />
         </View>
+        </View>
+
+
         </View>
         </ImageBackground>
     );

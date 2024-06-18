@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import { TextInput } from 'react-native-web';
+import { Button, TextInput } from 'react-native-web';
 
 const styles = StyleSheet.create({
   //---------------------------- STYLE DA HOME -----------------------
@@ -38,6 +38,7 @@ const styles = StyleSheet.create({
 
   searchIcon: {
     marginRight: 10,
+    marginLeft: 50, 
   },
   
   
@@ -87,11 +88,25 @@ const styles = StyleSheet.create({
     fontFamily: 'Arial',
   },
 
-  button:{
-    flexDirection : 'row',
-    paddingTop : 20,
+button :{
+  flexDirection : 'row',
+},
+
+  button1:{
+    paddingLeft : 10,
+    paddingTop : 10,
+    
   },
   
+  button2:{
+    paddingTop : 10,
+    paddingLeft : 10,
+  },
+
+  button3:{
+    paddingTop : 10,
+    paddingLeft : 10,
+  },
   //--------------------------------- STYLE DETALHES ---------------------------
   
   containerDetails: {
@@ -154,6 +169,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(0, 0, 0, 0.5)',
     alignItems: 'center',
     justifyContent: 'center',
+    marginBottom: 70,
   },
   textSobre:{
     color : '#9932cc',

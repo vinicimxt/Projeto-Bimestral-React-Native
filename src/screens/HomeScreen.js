@@ -40,11 +40,21 @@ const HomeScreen = ({ navigation }) => {
             style={styles.smallImage}
           />
         </View>
+
         <View style={styles.button}>
-        <Button  title ='Detalhes' onPress={() => navigation.navigate('Detalhes')} />
+        <View style={styles.button1}>
+        <Button  title ='detalhes' onPress={() => navigation.navigate('Detalhes')}  color="purple"/>
+        </View>
+
+        <View style={styles.button2}>
         <Button  title='Login'  onPress={() => navigation.navigate('Login')} />
+        </View>
+          
+        <View style={styles.button3}> 
         <Button  title='Sobre nós'  onPress={() => navigation.navigate('Sobre nos')} />
         </View>
+        </View>
+
       </View>
     </ImageBackground>
   );

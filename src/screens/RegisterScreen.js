@@ -5,7 +5,8 @@ import styles from './style';
 const LoginScreen = ({ navigation }) => {
     const [email, setEmail] = useState('');
     const [Password, setPassword] = useState('');
-
+    const [ConfirmPassword,setConfirmPassword] = useState('');
+    
     const handleLogin = () => {
         if (email === ''|| Password === '') {
             Alert.alert("Erro", "Por favor, preencha todos os campos.");
@@ -34,8 +35,16 @@ const LoginScreen = ({ navigation }) => {
             <TextInput
                 style={styles.inputSenha}
                 value={Password}
-                onChangeText={setPassword}
+                onChangeText={setConfirmPassword}
                 placeholder="Senha"
+                secureTextEntry
+            />
+             <Text>Confirmar senha</Text>
+            <TextInput
+                style={styles.inputSenha}
+                value={ConfirmPassword}
+                onChangeText={setPassword}
+                placeholder="confirmar senha"
                 secureTextEntry
             />
 
@@ -58,7 +67,7 @@ const LoginScreen = ({ navigation }) => {
             <View style={styles.button3}>
             <Button
                 title="Cadastrar"
-                onPress={()=> navigation.navigate('Cadastrar')}
+                onPress={()=> navigation.navigate(Cadastrar)}
             />
             </View>
             </View>
