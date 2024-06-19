@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Button, View,  Text, TextInput, Alert,ImageBackground} from 'react-native';
 import styles from './style';
 
-const LoginScreen = ({ navigation }) => {
+const RecoveryPasswordScreen = ({ navigation }) => {
     const [email, setEmailRecuperar] = useState('');
    
 
@@ -47,7 +47,6 @@ const LoginScreen = ({ navigation }) => {
                 onPress={() => navigation.navigate('Recuperar senha')} color="purple"
             />
             </View>
-
             </View>
 
         </View>
@@ -55,5 +54,5 @@ const LoginScreen = ({ navigation }) => {
     );
 };
 
-export default LoginScreen;
+export default RecoveryPasswordScreen;
 

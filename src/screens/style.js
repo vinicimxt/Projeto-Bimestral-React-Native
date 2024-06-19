@@ -167,9 +167,16 @@ button :{
     color : 'white',
   },
 
-  titleLogin: {
-   
+  inputOpiniao: {
+    width: '40%',
+    height: 40,
+    borderColor: 'gray',
+    borderWidth: 1,
+    marginBottom: 12,
+    paddingHorizontal: 8,
+    color : 'white',
   },
+  
 
   // -------------------------- STYLE SOBRE NOS -----------------
   

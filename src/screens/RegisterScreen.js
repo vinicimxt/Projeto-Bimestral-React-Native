@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Button, View,  Text, TextInput, Alert,ImageBackground} from 'react-native';
 import styles from './style';
 
-const LoginScreen = ({ navigation }) => {
+const RegisterScreen = ({ navigation }) => {
     const [email, setEmail] = useState('');
     const [Password, setPassword] = useState('');
     const [ConfirmPassword,setConfirmPassword] = useState('');
@@ -67,12 +67,6 @@ const LoginScreen = ({ navigation }) => {
             />
             </View> 
 
-            <View style={styles.button2}>
-            <Button style={styles.titleLogin}
-                title="Recuperar senha"
-                onPress={() => navigation.navigate('Recuperar senha')} color="purple"
-            />
-            </View>
 
             <View style={styles.button3}>
             <Button 
@@ -95,5 +89,5 @@ const LoginScreen = ({ navigation }) => {
     );
 };
 
-export default LoginScreen;
+export default RegisterScreen;
 

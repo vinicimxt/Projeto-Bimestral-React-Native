@@ -9,7 +9,8 @@ import DetailsScreen from './src/screens/DetailsScreen';
 import LoginScreen from './src/screens/LoginScreen';  
 import SobreNosScreen from './src/screens/SobreNosScreen';
 import RegisterScreen from './src/screens/RegisterScreen';
-import RecoveryPassword from './src/screens/RecoveryPassword';
+import RecoveryPassword from './src/screens/RecoveryPasswordScreen';
+import OpinionScreen from './src/screens/OpinionScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -45,6 +46,11 @@ export default function App() {
           <Stack.Screen
             name='Recuperar senha'
             component={RecoveryPassword} 
+          />
+
+          <Stack.Screen
+            name='Deixe sua opinião'
+            component={OpinionScreen} 
           />
 
         </Stack.Navigator>
