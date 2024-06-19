@@ -44,21 +44,21 @@ const LoginScreen = ({ navigation }) => {
             <View style={styles.button1}>
             <Button style={styles.titleLogin}
                 title="Acessar"
-                onPress={handleLogin}
+                onPress={handleLogin} color="purple"
             />
             </View> 
 
             <View style={styles.button2}>
             <Button style={styles.titleLogin}
                 title="Recuperar senha"
-                onPress={() => navigation.navigate('Recuperar senha')}
+                onPress={() => navigation.navigate('Recuperar senha')} color="purple"
             />
             </View>
 
             <View style={styles.button3}>
             <Button
                 title="Cadastrar"
-                onPress={()=> navigation.navigate('Cadastrar')}
+                onPress={()=> navigation.navigate('Cadastrar')} color="purple"
             />
             </View>
             </View>

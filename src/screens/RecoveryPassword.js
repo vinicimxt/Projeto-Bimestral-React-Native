@@ -37,14 +37,14 @@ const LoginScreen = ({ navigation }) => {
             <View style={styles.button1}>
             <Button style={styles.titleLogin}
                 title="Voltar"
-                onPress={() => navigation.navigate('Home')}
+                onPress={() => navigation.navigate('Home')} color="purple"
             />
             </View> 
 
             <View style={styles.button2}>
             <Button style={styles.titleLogin}
                 title="Recuperar senha"
-                onPress={() => navigation.navigate('Recuperar senha')}
+                onPress={() => navigation.navigate('Recuperar senha')} color="purple"
             />
             </View>
 
