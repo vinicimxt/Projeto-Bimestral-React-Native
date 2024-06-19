@@ -63,7 +63,7 @@ const LoginScreen = ({ navigation }) => {
             <View style={styles.button1}>
             <Button style={styles.titleLogin}
                 title="Voltar"
-                onPress={handleLogin}
+                onPress={() => navigation.navigate('Home')}
             />
             </View> 
 
@@ -74,13 +74,8 @@ const LoginScreen = ({ navigation }) => {
             />
             </View>
 
-<<<<<<< HEAD
             <View style={styles.button3}>
             <Button 
-=======
-            <View style={styles.button3} >
-            <Button
->>>>>>> 4a062da535208d9c293f3b2ec2d5e97f46b413d4
                 title="Cadastrar"
                 onPress={()=> { if(email !== ''|| Password !== '' || ConfirmPassword !== '' || user !== '')
                     {
