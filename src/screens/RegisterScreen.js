@@ -60,11 +60,11 @@ const LoginScreen = ({ navigation }) => {
             <View style={styles.button2}>
             <Button style={styles.titleLogin}
                 title="Recuperar senha"
-                onPress={() => navigation.navigate('Recuperar senha')}
+                onPress={() => navigation.navigate('Recuperar senha')} 
             />
             </View>
 
-            <View style={styles.button3}>
+            <View style={styles.button3} >
             <Button
                 title="Cadastrar"
                 onPress={()=> navigation.navigate(Cadastrar)}

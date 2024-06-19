@@ -47,11 +47,11 @@ const HomeScreen = ({ navigation }) => {
         </View>
 
         <View style={styles.button2}>
-        <Button  title='Login'  onPress={() => navigation.navigate('Login')} />
+        <Button  title='Login'  onPress={() => navigation.navigate('Login')}  color="purple"/>
         </View>
           
         <View style={styles.button3}> 
-        <Button  title='Sobre nós'  onPress={() => navigation.navigate('Sobre nos')} />
+        <Button  title='Sobre nós'  onPress={() => navigation.navigate('Sobre nos')} color="purple"/>
         </View>
         </View>
 

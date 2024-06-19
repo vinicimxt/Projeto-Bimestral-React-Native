@@ -26,13 +26,13 @@ Construa seu perfil privado, onde você pode acompanhar todas as suas avaliaçõ
         <View style={styles.button1}>
             <Button 
                 title='Home'
-                onPress={ () =>navigation.navigate('Home')}
+                onPress={ () =>navigation.navigate('Home')} color="purple"
             />
         </View>
         <View style={styles.button2}>    
             <Button
                 title='Deixe sua opinião'
-                onPress={ () =>navigation.navigate('Deixe sua opinião')}
+                onPress={ () =>navigation.navigate('Deixe sua opinião')} color="purple"
             />
         </View>
         </View>
