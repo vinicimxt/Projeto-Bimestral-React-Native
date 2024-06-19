@@ -145,9 +145,18 @@ button :{
     marginBottom: 12,
     paddingHorizontal: 8,
     color : 'white',
-    
   },
   
+  inputUser: {
+    width: '40%',
+    height: 40,
+    borderColor: 'gray',
+    borderWidth: 1,
+    marginBottom: 12,
+    paddingHorizontal: 8,
+    color : 'white',
+  },
+
   inputSenha: {
     width: '40%',
     height: 40,

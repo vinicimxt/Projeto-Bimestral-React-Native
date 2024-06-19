@@ -6,7 +6,7 @@ const LoginScreen = ({ navigation }) => {
     const [email, setEmail] = useState('');
     const [Password, setPassword] = useState('');
     const [ConfirmPassword,setConfirmPassword] = useState('');
-    
+    const [user,setUser] = useState('');
     const handleLogin = () => {
         if (email === ''|| Password === '') {
             Alert.alert("Erro", "Por favor, preencha todos os campos.");
@@ -24,6 +24,16 @@ const LoginScreen = ({ navigation }) => {
             <Text>Você está em Login</Text>
             <Text>Email</Text>
             <TextInput
+                style={styles.inputUser}
+                value={user}
+                onChangeText={setUser}
+                placeholder="Usuário"
+                keyboardType="Text"
+                autoCapitalize="none"
+            />
+
+            <Text>Email</Text>
+            <TextInput
                 style={styles.inputEmail}
                 value={email}
                 onChangeText={setEmail}
@@ -35,7 +45,7 @@ const LoginScreen = ({ navigation }) => {
             <TextInput
                 style={styles.inputSenha}
                 value={Password}
-                onChangeText={setConfirmPassword}
+                onChangeText={setPassword}
                 placeholder="Senha"
                 secureTextEntry
             />
@@ -43,8 +53,8 @@ const LoginScreen = ({ navigation }) => {
             <TextInput
                 style={styles.inputSenha}
                 value={ConfirmPassword}
-                onChangeText={setPassword}
-                placeholder="confirmar senha"
+                onChangeText={setConfirmPassword}
+                placeholder="Confirmar senha"
                 secureTextEntry
             />
 
@@ -52,7 +62,7 @@ const LoginScreen = ({ navigation }) => {
 
             <View style={styles.button1}>
             <Button style={styles.titleLogin}
-                title="Acessar"
+                title="Voltar"
                 onPress={handleLogin}
             />
             </View> 
@@ -65,9 +75,17 @@ const LoginScreen = ({ navigation }) => {
             </View>
 
             <View style={styles.button3}>
-            <Button
+            <Button 
                 title="Cadastrar"
-                onPress={()=> navigation.navigate(Cadastrar)}
+                onPress={()=> { if(email !== ''|| Password !== '' || ConfirmPassword !== '' || user !== '')
+                    {
+                        if(ConfirmPassword == Password){
+                            navigation.navigate('Login')
+                        }else 
+                        {
+                            Alert.alert('Cancel Pressed')
+                        }
+                    }}}
             />
             </View>
             </View>

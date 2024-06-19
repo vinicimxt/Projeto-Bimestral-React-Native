@@ -9,6 +9,8 @@ import DetailsScreen from './src/screens/DetailsScreen';
 import LoginScreen from './src/screens/LoginScreen';  
 import SobreNosScreen from './src/screens/SobreNosScreen';
 import RegisterScreen from './src/screens/RegisterScreen';
+import RecoveryPassword from './src/screens/RecoveryPassword';
+
 const Stack = createNativeStackNavigator();
 
 export default function App() {
@@ -38,6 +40,11 @@ export default function App() {
         <Stack.Screen
             name='Cadastrar'
             component={RegisterScreen} 
+          />
+
+          <Stack.Screen
+            name='Recuperar senha'
+            component={RecoveryPassword} 
           />
 
         </Stack.Navigator>
