@@ -70,12 +70,17 @@ const LoginScreen = ({ navigation }) => {
             <View style={styles.button2}>
             <Button style={styles.titleLogin}
                 title="Recuperar senha"
-                onPress={() => navigation.navigate('Recuperar senha')}
+                onPress={() => navigation.navigate('Recuperar senha')} 
             />
             </View>
 
+<<<<<<< HEAD
             <View style={styles.button3}>
             <Button 
+=======
+            <View style={styles.button3} >
+            <Button
+>>>>>>> 4a062da535208d9c293f3b2ec2d5e97f46b413d4
                 title="Cadastrar"
                 onPress={()=> { if(email !== ''|| Password !== '' || ConfirmPassword !== '' || user !== '')
                     {

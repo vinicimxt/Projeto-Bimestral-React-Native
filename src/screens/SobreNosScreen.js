@@ -50,7 +50,7 @@ const SobreNosScreen = ({navigation}) =>{
             <View style={styles.button}>
             <Button 
                 title='Home'
-                onPress={ () =>navigation.navigate('Home')}
+                onPress={ () =>navigation.navigate('Home')} color ="purple"
             />
             </View>
         </View>
