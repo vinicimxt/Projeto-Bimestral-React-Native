@@ -1,3 +1,4 @@
+import { text } from 'cheerio';
 import { StyleSheet } from 'react-native';
 import { Button, TextInput } from 'react-native-web';
 
@@ -187,16 +188,70 @@ button :{
     justifyContent: 'center',
     marginBottom: 70,
   },
+
   textSobre:{
     color : '#9932cc',
-    
   },
+
   imageFotos: {
     borderRadius : 80,
     width : 80,
     height : 80,
-    
-  }
+  },
+
+
+  // -------------------------- STYLE MOVIE -----------------
+  containerMovie: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'space-between',
+  },
+
+  imageFilme: {
+    height: 70,
+    width: 70,
+    border: 1,
+    borderRadius: 50,
+  },
+
+  textMovie: {
+    fontSize: 40,
+    color: 'purple',
+    fontFamily: 'Arial',
+  },
+
+  textDescricao: {
+    fontSize: 10,
+    color: 'white',
+    fontFamily: 'Arial',
+  },
+
+  textFeedback: {
+    fontSize: 10,
+    color: 'white',
+    fontFamily: 'Arial',
+  },
+
+  textSinopse: {
+    fontSize: 10,
+    color: 'white',
+    fontFamily: 'Arial',
+  },
+
+  InputFeedback: {
+    width: '40%',
+    height: 40,
+    borderColor: 'gray',
+    borderWidth: 1,
+    marginBottom: 12,
+    paddingHorizontal: 8,
+    color : 'white',
+  },
+
+  buttonFeedback: {
+    paddingTop : 10,
+    paddingLeft : 10,
+  },
   
 });
 
