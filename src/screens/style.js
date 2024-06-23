@@ -42,7 +42,9 @@ const styles = StyleSheet.create({
     marginLeft: 50, 
   },
   
-  
+  containerCatalogo: {
+    paddingTop: 50,
+  },
 
   header: {
     fontSize: 90,
@@ -87,6 +89,7 @@ const styles = StyleSheet.create({
     color: '#fff',
     marginVertical: 10,
     fontFamily: 'Arial',
+    textAlign: 'center',
   },
 
 button :{
@@ -202,16 +205,16 @@ button :{
 
   // -------------------------- STYLE MOVIE -----------------
   containerMovie: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    justifyContent: 'space-between',
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
   },
 
   imageFilme: {
-    height: 70,
-    width: 70,
-    border: 1,
-    borderRadius: 50,
+    width: 160,
+    height: 200,
+    marginHorizontal: 5,
   },
 
   textMovie: {
@@ -233,7 +236,7 @@ button :{
   },
 
   textSinopse: {
-    fontSize: 10,
+    fontSize: 25,
     color: 'white',
     fontFamily: 'Arial',
   },

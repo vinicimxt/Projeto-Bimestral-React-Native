@@ -14,13 +14,15 @@ const MovieScreen = ({ navigation }) => {
 
                 <Text style={styles.textMovie}>Nome do filme</Text>
 
-                <Image
-                    source={{ uri: './catalogos_filmes/zona.jpg' }}
-                    style={styles.imageFilme} />
+                <View style={styles.imageRow}>
+                    <Image
+                        source={{ uri: './catalogos_filmes/furiosa.png' }}
+                        style={styles.imageFilme} />
+                    <Text style={styles.textSinopse}>Sinopse</Text>
+                </View>
 
-                <Text>Nota em estrelas</Text>
-                <Text style={styles.textSinopse}>Sinopse</Text>
                 <Text style={styles.textFeedback}>Dê o seu feedback</Text>
+                <Text>Nota em estrelas</Text>
                 <TextInput style={styles.InputFeedback}></TextInput>
                 <Button style={styles.buttonFeedback}></Button>
 

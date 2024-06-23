@@ -60,6 +60,82 @@ const HomeScreen = ({ navigation }) => {
           </View>
         </View>
 
+        <View style={styles.containerCatalogo}>
+          <Text style={styles.sub}>Top 10 filmes mais vistos</Text>
+
+          <View style={styles.imageRow}>
+            <TouchableOpacity onPress={() => navigation.navigate('Movie')}>
+              <Image
+                source={{ uri: 'https://musicart.xboxlive.com/7/4d4d6500-0000-0000-0000-000000000002/504/image.jpg?w=1920&h=1080' }}
+                style={styles.largeImage}
+              />
+            </TouchableOpacity>
+
+            <TouchableOpacity onPress={() => navigation.navigate('Movie')}>
+              <Image
+                source={{ uri: 'https://br.web.img3.acsta.net/pictures/19/04/26/17/30/2428965.jpg' }}
+                style={styles.largeImage}
+              />
+            </TouchableOpacity>
+
+            <TouchableOpacity onPress={() => navigation.navigate('Movie')}>
+              <Image
+                source={{ uri: 'https://br.web.img2.acsta.net/medias/nmedia/18/89/56/94/20055685.jpg', }}
+                style={styles.largeImage}
+              />
+            </TouchableOpacity>
+
+            <TouchableOpacity onPress={() => navigation.navigate('Movie')}>
+              <Image
+                source={{ uri: 'https://images.justwatch.com/poster/249956665/s718/star-wars-o-despertar-da-forca.jpg', }}
+                style={styles.largeImage}
+              />
+            </TouchableOpacity>
+
+            <TouchableOpacity onPress={() => navigation.navigate('Movie')}>
+              <Image
+                source={{ uri: 'https://br.web.img2.acsta.net/pictures/18/03/16/15/08/2019826.jpg', }}
+                style={styles.largeImage}
+              />
+            </TouchableOpacity>
+
+            <TouchableOpacity onPress={() => navigation.navigate('Movie')}>
+              <Image
+                source={{ uri: 'https://m.media-amazon.com/images/I/81zLDvpNlLL.AC_UF894,1000_QL80.jpg', }}
+                style={styles.largeImage}
+              />
+            </TouchableOpacity>
+
+            <TouchableOpacity onPress={() => navigation.navigate('Movie')}>
+              <Image
+                source={{ uri: 'https://br.web.img3.acsta.net/pictures/19/05/07/20/54/2901026.jpg', }}
+                style={styles.largeImage}
+              />
+            </TouchableOpacity>
+
+            <TouchableOpacity onPress={() => navigation.navigate('Movie')}>
+              <Image
+                source={{ uri: 'https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/89/43/82/20052140.jpg', }}
+                style={styles.largeImage}
+              />
+            </TouchableOpacity>
+
+            <TouchableOpacity onPress={() => navigation.navigate('Movie')}>
+              <Image
+                source={{ uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ2uqpeoOTpA-Ub63OD5hznXIO-NyVluAO0A&s', }}
+                style={styles.largeImage}
+              />
+            </TouchableOpacity>
+
+            <TouchableOpacity onPress={() => navigation.navigate('Movie')}>
+              <Image
+                source={{ uri: 'https://br.web.img3.acsta.net/pictures/19/10/14/15/18/1691494.jpg' }}
+                style={styles.largeImage}
+              />
+            </TouchableOpacity>
+          </View>
+        </View>
+
       </View>
     </ImageBackground>
   );
