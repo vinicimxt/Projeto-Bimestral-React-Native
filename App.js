@@ -57,7 +57,7 @@ export default function App() {
           <Stack.Screen
             name='Movie'
             component={MovieScreen} 
-          />
+          />  
 
         </Stack.Navigator>
       </NavigationContainer>

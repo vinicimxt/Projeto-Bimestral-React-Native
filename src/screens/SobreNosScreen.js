@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button , View ,Text,ImageBackground,Image} from 'react-native';
+import { Button , View ,Text,ImageBackground,Image,ScrollView} from 'react-native';
 import styles from './style';
 
 const SobreNosScreen = ({navigation}) =>{
@@ -8,6 +8,7 @@ const SobreNosScreen = ({navigation}) =>{
               source={{ uri: './fotos/FundoHome.png' }} 
               style={styles.background}
     >
+        <ScrollView>
         <View style={styles.containerSobreNos}>
             <h1>Sobre Nós</h1>
             <br></br> 
@@ -51,10 +52,11 @@ const SobreNosScreen = ({navigation}) =>{
             <Button 
                 title='Home'
                 onPress={ () =>navigation.navigate('Home')} color ="purple"
+                
             />
             </View>
         </View>
-
+        </ScrollView>
         </ImageBackground>
     );
 }

@@ -53,13 +53,13 @@ const styles = StyleSheet.create({
   },
   
   welcome: {
-    fontSize: 20,
+    fontSize: 40,
     color : '#9932cc',
     marginVertical: 10,
   },
 
   description: {
-    fontSize: 13,
+    fontSize: 30,
     color : '#9932cc',
     textAlign: 'center',
     marginVertical: 10,
@@ -70,6 +70,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     marginVertical: 10,
+    paddingLeft: 10,
   },
 
   smallImage: {
@@ -79,8 +80,8 @@ const styles = StyleSheet.create({
   },
 
   largeImage: {
-    width: 140,
-    height: 160,
+    width: 150,
+    height: 300,
     marginHorizontal: 5,
   },
 
@@ -111,6 +112,9 @@ button :{
     paddingTop : 10,
     paddingLeft : 10,
   },
+
+  
+
   //--------------------------------- STYLE DETALHES ---------------------------
   
   containerDetails: {
@@ -124,9 +128,12 @@ button :{
     textAlign: 'auto',
     paddingLeft: 80,
     paddingRight: 80,
+    fontSize: 20,
   },
   h1Details :{
     color : '#9932cc',
+    fontSize: 30,
+    
   },
 
   
@@ -194,12 +201,13 @@ button :{
 
   textSobre:{
     color : '#9932cc',
+    fontSize : 22,
   },
 
   imageFotos: {
-    borderRadius : 80,
-    width : 80,
-    height : 80,
+    borderRadius : 100,
+    width : 150,
+    height : 150,
   },
 
 
