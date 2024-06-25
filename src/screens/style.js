@@ -1,7 +1,7 @@
-import { text } from 'cheerio';
 import { StyleSheet } from 'react-native';
-import { Button, TextInput } from 'react-native-web';
+import { Dimensions } from 'react-native';
 
+const { width, height } = Dimensions.get('window');
 const styles = StyleSheet.create({
   //---------------------------- STYLE DA HOME -----------------------
 
@@ -80,8 +80,8 @@ const styles = StyleSheet.create({
   },
 
   largeImage: {
-    width: 150,
-    height: 300,
+    width: width * 0.09,
+    height: height * 0.3,
     marginHorizontal: 5,
   },
 
@@ -220,8 +220,8 @@ button :{
   },
 
   imageFilme: {
-    width: 160,
-    height: 200,
+    width: width * 0.09,
+    height: height * 0.3,
     marginHorizontal: 5,
   },
 
@@ -229,6 +229,7 @@ button :{
     fontSize: 40,
     color: 'purple',
     fontFamily: 'Arial',
+    paddingRight: 10,
   },
 
   textDescricao: {
@@ -238,14 +239,34 @@ button :{
   },
 
   textFeedback: {
-    fontSize: 10,
+    fontSize: 25,
+    paddingBottom: 10,
+    paddingTop: 20,
     color: 'white',
     fontFamily: 'Arial',
   },
 
-  textSinopse: {
-    fontSize: 25,
+  textFeedbackStar: {
+    fontSize: 10,
+    paddingBottom: 10,
+    paddingTop: 10,
     color: 'white',
+    fontFamily: 'Arial',
+  },
+
+  viewSinopse: {
+    
+  },
+
+  textSinopseHeader: {
+    fontSize: 25,
+    color: 'white', //test
+    fontFamily: 'Arial',
+  },
+
+  textSinopse: {
+    fontSize: 15,
+    color: 'white', //test
     fontFamily: 'Arial',
   },
 

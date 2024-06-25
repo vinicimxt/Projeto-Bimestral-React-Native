@@ -1,12 +1,18 @@
 import React, { useState } from 'react';
-import { Button, View, Text, ImageBackground, TextInput, Image, Alert } from 'react-native';
+import { Button, View, Text, ImageBackground, TextInput, Image, Alert, TouchableOpacity } from 'react-native';
 import StarRating from './StarRating'; // Importe o componente de estrelas
+import Icon from 'react-native-vector-icons/FontAwesome';
 import styles from './style';
 
 const MovieScreen = ({ navigation }) => {
     const [feedback, setFeedback] = useState('');
     const [rating, setRating] = useState(0); // Estado para armazenar a avaliação atual
     const [enviado, setEnviado] = useState(false);
+    const [favoritado, setFavoritado] = useState(false);
+
+    const toggleFavoritar = () => {
+        setFavoritado(!favoritado);
+    };
 
     const handleEnviar = () => {
         setEnviado(true);
@@ -25,20 +31,32 @@ const MovieScreen = ({ navigation }) => {
         >
             <View style={styles.containerMovie}>
 
-                <Text style={styles.textMovie}>Nome do filme</Text>
+                <View style={styles.imageRow}>
+                    <Text style={styles.textMovie}>Nome do filme</Text>
+                    <TouchableOpacity onPress={toggleFavoritar}>
+                        <Icon
+                            name={favoritado ? 'star' : 'star-o'}
+                            size={30}
+                            color={favoritado ? 'gold' : 'gray'}
+                        />
+                    </TouchableOpacity>
+                </View>
 
                 <View style={styles.imageRow}>
                     <Image
                         source={{ uri: './catalogos_filmes/furiosa.png' }}
                         style={styles.imageFilme}
                     />
-                    <Text style={styles.textSinopse}>Sinopse</Text>
+                    <View style={styles.viewSinopse}>
+                        <Text style={styles.textSinopseHeader}>Sinopse</Text>
+                        <Text style={styles.textSinopse}>Com um salto temporal, Riley se encontra mais velha, pass </Text>
+                    </View>
                 </View>
 
                 <Text style={styles.textFeedback}>Dê o seu feedback</Text>
                 <StarRating rating={rating} onStarPress={handleStarPress} />
 
-                <Text style={styles.textFeedback}>Nota em estrelas: {rating}/5</Text>
+                <Text style={styles.textFeedbackStar}>Nota em estrelas: {rating}/5</Text>
 
                 <TextInput
                     style={styles.InputFeedback}
