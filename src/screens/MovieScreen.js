@@ -4,7 +4,8 @@ import StarRating from './StarRating'; // Importe o componente de estrelas
 import Icon from 'react-native-vector-icons/FontAwesome';
 import styles from './style';
 
-const MovieScreen = ({ navigation }) => {
+const MovieScreen = ({ route, navigation }) => {
+    const { movie } = route.params;
     const [feedback, setFeedback] = useState('');
     const [rating, setRating] = useState(0); // Estado para armazenar a avaliação atual
     const [enviado, setEnviado] = useState(false);
@@ -32,7 +33,7 @@ const MovieScreen = ({ navigation }) => {
             <View style={styles.containerMovie}>
 
                 <View style={styles.imageRow}>
-                    <Text style={styles.textMovie}>Nome do filme</Text>
+                    <Text style={styles.textMovie}>{movie.name}</Text>
                     <TouchableOpacity onPress={toggleFavoritar}>
                         <Icon
                             name={favoritado ? 'star' : 'star-o'}
@@ -44,12 +45,12 @@ const MovieScreen = ({ navigation }) => {
 
                 <View style={styles.imageRow}>
                     <Image
-                        source={{ uri: './catalogos_filmes/furiosa.png' }}
+                        source={{ uri: movie.uri }}
                         style={styles.imageFilme}
                     />
                     <View style={styles.viewSinopse}>
                         <Text style={styles.textSinopseHeader}>Sinopse</Text>
-                        <Text style={styles.textSinopse}>Com um salto temporal, Riley se encontra mais velha, pass </Text>
+                        <Text style={styles.textSinopse}>{movie.sinopse}</Text>
                     </View>
                 </View>
 
