@@ -260,6 +260,7 @@ const HomeScreen = ({ navigation }) => {
               <Icon name="body-outline" size={36} color="purple" />
             </TouchableOpacity>
             </View>
+
           </View>
 
 

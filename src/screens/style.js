@@ -285,6 +285,22 @@ button :{
     paddingLeft : 10,
   },
   
+  //-----------------------------------------------------------------------STYLE PAGINA FAVORITOS------------------------------------------------------
+
+container: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: 5,
+},
+
+textFav :{
+  fontSize: 60,
+  color: 'purple',
+  fontFamily: 'Arial', 
+},
+
+
+
 });
 
 export default styles;

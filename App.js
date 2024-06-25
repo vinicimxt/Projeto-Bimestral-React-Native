@@ -12,6 +12,8 @@ import RegisterScreen from './src/screens/RegisterScreen';
 import RecoveryPassword from './src/screens/RecoveryPasswordScreen';
 import OpinionScreen from './src/screens/OpinionScreen';
 import MovieScreen from './src/screens/MovieScreen';
+import FavoritoScreen from './src/screens/FavoritoScreen';
+
 
 const Stack = createNativeStackNavigator();
 
@@ -58,6 +60,11 @@ export default function App() {
             name='Movie'
             component={MovieScreen} 
           />  
+
+          <Stack.Screen 
+            name='Favorito' 
+            component={FavoritoScreen}
+          />
 
         </Stack.Navigator>
       </NavigationContainer>

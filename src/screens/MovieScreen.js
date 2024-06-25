@@ -34,7 +34,7 @@ const MovieScreen = ({ route, navigation }) => {
 
                 <View style={styles.imageRow}>
                     <Text style={styles.textMovie}>{movie.name}</Text>
-                    <TouchableOpacity onPress={toggleFavoritar}>
+                    <TouchableOpacity  onPress={() => navigation.navigate('Favorito', { movie })}>
                         <Icon
                             name={favoritado ? 'star' : 'star-o'}
                             size={30}
