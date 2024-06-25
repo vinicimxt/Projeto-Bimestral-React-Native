@@ -227,11 +227,11 @@ const HomeScreen = ({ navigation }) => {
               style={styles.smallImage}
             />
 
-              <Image
-                source={{ uri: './catalogos_filmes/furiosa.png' }}
-                style={styles.largeImage}
-              />
-            
+            <Image
+              source={{ uri: './catalogos_filmes/furiosa.png' }}
+              style={styles.largeImage}
+            />
+
 
             <Image
               source={{ uri: './catalogos_filmes/images.jpg' }}
@@ -241,79 +241,78 @@ const HomeScreen = ({ navigation }) => {
 
           <View style={styles.button}>
 
-          <View style={styles.button1}>
-            <TouchableOpacity style={styles.iconButton} onPress={() => navigation.navigate('Detalhes')}>
-              <Icon name="information-circle-outline" size={40} color="purple" />
-            </TouchableOpacity>
+            <View style={styles.button1}>
+              <TouchableOpacity style={styles.iconButton} onPress={() => navigation.navigate('Detalhes')}>
+                <Icon name="information-circle-outline" size={40} color="purple" />
+              </TouchableOpacity>
             </View>
 
 
             <View style={styles.button2}>
-            <TouchableOpacity style={styles.iconButton} onPress={() => navigation.navigate('Login')}>
-              <Icon name="person-circle-outline" size={40} color="purple" />
-            </TouchableOpacity>
+              <TouchableOpacity style={styles.iconButton} onPress={() => navigation.navigate('Login')}>
+                <Icon name="person-circle-outline" size={40} color="purple" />
+              </TouchableOpacity>
             </View>
 
 
             <View style={styles.button3}>
-            <TouchableOpacity style={styles.iconButton} onPress={() => navigation.navigate('Sobre nos')}>
-              <Icon name="body-outline" size={36} color="purple" />
-            </TouchableOpacity>
+              <TouchableOpacity style={styles.iconButton} onPress={() => navigation.navigate('Sobre nos')}>
+                <Icon name="body-outline" size={36} color="purple" />
+              </TouchableOpacity>
             </View>
-
           </View>
 
 
           <View style={styles.containerCatalogo}>
-          <Text style={styles.sub}>Top 10 filmes mais vistos</Text>
-          <View style={styles.imageRow}>
-            {movies.map(movie => (
-              <TouchableOpacity
-                key={movie.id}
-                onPress={() => navigation.navigate('Movie', { movie })}
-              >
-                <Image
-                  source={{ uri: movie.uri }}
-                  style={styles.largeImage}
-                />
-              </TouchableOpacity>
-            ))}
-          </View>
+            <Text style={styles.sub}>Top 10 filmes mais vistos</Text>
+            <View style={styles.imageRow}>
+              {movies.map(movie => (
+                <TouchableOpacity
+                  key={movie.id}
+                  onPress={() => navigation.navigate('Movie', { movie })}
+                >
+                  <Image
+                    source={{ uri: movie.uri }}
+                    style={styles.largeImage}
+                  />
+                </TouchableOpacity>
+              ))}
+            </View>
           </View>
 
-
-          <View style={styles.containerCatalogo}>
-          <Text style={styles.sub}>Filmes em cartaz</Text>
-          <View style={styles.imageRow}>
-            {movies2.map(movie => (
-              <TouchableOpacity
-                key={movie.id}
-                onPress={() => navigation.navigate('Movie', { movie })}
-              >
-                <Image
-                  source={{ uri: movie.uri }}
-                  style={styles.largeImage}
-                />
-              </TouchableOpacity>
-            ))}
-          </View>
-          </View>
 
           <View style={styles.containerCatalogo}>
-          <Text style={styles.sub}>Animações</Text>
-          <View style={styles.imageRow}>
-            {movies3.map(movie => (
-              <TouchableOpacity
-                key={movie.id}
-                onPress={() => navigation.navigate('Movie', { movie })}
-              >
-                <Image
-                  source={{ uri: movie.uri }}
-                  style={styles.largeImage}
-                />
-              </TouchableOpacity>
-            ))}
+            <Text style={styles.sub}>Filmes em cartaz</Text>
+            <View style={styles.imageRow}>
+              {movies2.map(movie => (
+                <TouchableOpacity
+                  key={movie.id}
+                  onPress={() => navigation.navigate('Movie', { movie })}
+                >
+                  <Image
+                    source={{ uri: movie.uri }}
+                    style={styles.largeImage}
+                  />
+                </TouchableOpacity>
+              ))}
+            </View>
           </View>
+
+          <View style={styles.containerCatalogo}>
+            <Text style={styles.sub}>Animações</Text>
+            <View style={styles.imageRow}>
+              {movies3.map(movie => (
+                <TouchableOpacity
+                  key={movie.id}
+                  onPress={() => navigation.navigate('Movie', { movie })}
+                >
+                  <Image
+                    source={{ uri: movie.uri }}
+                    style={styles.largeImage}
+                  />
+                </TouchableOpacity>
+              ))}
+            </View>
           </View>
 
         </View>

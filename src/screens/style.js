@@ -219,6 +219,12 @@ button :{
     backgroundColor: 'rgba(0, 0, 0, 0.5)',
   },
 
+  containerComentarios: {
+    borderColor: "#8338ec",
+    border: 5,
+    paddingTop: 20,
+  },
+
   imageFilme: {
     width: width * 0.09,
     height: height * 0.3,
@@ -254,10 +260,6 @@ button :{
     fontFamily: 'Arial',
   },
 
-  viewSinopse: {
-    
-  },
-
   textSinopseHeader: {
     fontSize: 25,
     color: 'white', //test
@@ -268,6 +270,20 @@ button :{
     fontSize: 15,
     color: 'white', //test
     fontFamily: 'Arial',
+  },
+
+  textComentariosHeader: {
+    fontSize: 30,
+    color: 'purple', //test
+    fontFamily: 'Arial',
+    paddingBottom: 15,
+  },
+
+  textComentarios: {
+    fontSize: 15,
+    color: 'white', //test
+    fontFamily: 'Arial',
+    paddingBottom: 10,
   },
 
   InputFeedback: {
@@ -297,6 +313,14 @@ textFav :{
   fontSize: 60,
   color: 'purple',
   fontFamily: 'Arial', 
+  paddingBottom: 20,
+},
+
+textMovieFav: {
+  fontSize: 30,
+  color: 'gold',
+  fontFamily: 'Arial',
+  paddingRight: 10,
 },
 
 
